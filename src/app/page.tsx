@@ -1,5 +1,10 @@
+
+import { Navbar } from '@/components/navbar';
+
 export default function Home() {
   return (
+    <div>
+    <Navbar />
     <main className="min-h-screen bg-gray-100 gap-5">
       <div pt-10>
         <section className="flex items-center justify-center bg-gradient-to-b from-green-50 to-white px-4 md:px-8"> 
@@ -32,5 +37,6 @@ export default function Home() {
       </div>
 
     </main>
+    </div>
   );
 }
