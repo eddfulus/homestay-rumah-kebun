@@ -1,5 +1,6 @@
 import Amenities from "@/components/amenities";
 import Contact from "@/components/contact";
+import WhatsAppButton from "@/components/whatsappbutton";
 import { Gallery } from "@/components/gallery";
 
 export default function Home() {
@@ -36,20 +37,28 @@ export default function Home() {
           <h1>Hi. This is hero section</h1>
         </div> */}
         <section id="gallery" className="py-16 px-4 md:px-8">
-        <Gallery />
+          <Gallery />
         </section>
-       
+
         <div>
           <p>feature</p>
         </div>
         <section id="amenities" className="py-16 px-4 md:px-8 bg-white">
           <Amenities />
-          </section>
-    
-        <div>
-          <section id="contact" className="py-16 text-black px-4 md:px-8 bg-gray-100">
+        </section>
 
-          <Contact />
+        <div>
+          <section
+            id="contact"
+            className="py-16 text-black px-4 md:px-8 bg-gray-100"
+          >
+            <div>
+              <WhatsAppButton
+                phoneNumber="0192254456"
+                message="Homestay Rumah Kebun"
+              />
+            </div>
+            <Contact />
           </section>
         </div>
       </main>
