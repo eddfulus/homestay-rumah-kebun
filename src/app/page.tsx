@@ -1,13 +1,15 @@
+import Amenities from "@/components/amenities";
+import Contact from "@/components/contact";
 import { Gallery } from "@/components/gallery";
 
 export default function Home() {
   return (
     <div>
-      <main className="min-h-screen bg-gray-100 gap-5">
+      <main className="min-h-screen bg-gray-100 ">
         <div pt-10>
-          <section className="flex items-center justify-center bg-gradient-to-b from-green-50 to-white px-4 md:px-8">
+          <section className="h-screen flex items-center justify-center bg-gradient-to-b from-green-50 to-white px-4 md:px-8">
             <div className="max-w-2xl text-center">
-              <h1 className="text-2xl md:text-6xl font-bold text-green-800 mb-6">
+              <h1 className="text-xl md:text-6xl font-bold text-green-800 mb-6">
                 Rumah Kebun
               </h1>
               <div className="bg-green-50">
@@ -30,15 +32,25 @@ export default function Home() {
             </div>
           </section>
         </div>
-        <div className="flex items-center text-large rounded-lg px-6 py-4 bg-blue-500 text-white font-bold">
+        {/* <div className="flex items-center text-large rounded-lg px-6 py-4 bg-blue-500 text-white font-bold">
           <h1>Hi. This is hero section</h1>
-        </div>
+        </div> */}
+        <section id="gallery" className="py-16 px-4 md:px-8">
         <Gallery />
+        </section>
+       
         <div>
           <p>feature</p>
         </div>
+        <section id="amenities" className="py-16 px-4 md:px-8 bg-white">
+          <Amenities />
+          </section>
+    
         <div>
-          <p>contact</p>
+          <section id="contact" className="py-16 text-black px-4 md:px-8 bg-gray-100">
+
+          <Contact />
+          </section>
         </div>
       </main>
     </div>
