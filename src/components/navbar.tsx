@@ -20,6 +20,9 @@ const Navbar = () => {
                     <Link href="/#amenities">Amenities</Link>
                 </li>
                 <li className="text-black hover:text-green-500 transition-colors">
+                    <Link href="/#calendar">Calendar</Link>
+                </li>
+                <li className="text-black hover:text-green-500 transition-colors">
                     <Link href="/#contact">Contact</Link>
                 </li>
             </ul>

@@ -2,6 +2,7 @@ import Amenities from "@/components/amenities";
 import Contact from "@/components/contact";
 import WhatsAppButton from "@/components/whatsappbutton";
 import { Gallery } from "@/components/gallery";
+import GCalendar from "@/components/calendar";
 
 export default function Home() {
   return (
@@ -45,6 +46,13 @@ export default function Home() {
         </div>
         <section id="amenities" className="py-16 px-4 md:px-8 bg-white">
           <Amenities />
+        </section>
+        
+        <section id="calendar" className="py-16 px-4 md:px-8 bg-white">
+        <div>
+      <h1>Calendar</h1>
+      <GCalendar />
+    </div>
         </section>
 
         <div>
