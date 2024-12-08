@@ -54,7 +54,7 @@ export default function Home() {
           >
             <div>
               <WhatsAppButton
-                phoneNumber="0192254456"
+                phoneNumber="+60192254456"
                 message="Homestay Rumah Kebun"
               />
             </div>
