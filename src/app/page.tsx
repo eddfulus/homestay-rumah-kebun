@@ -3,11 +3,13 @@ import Contact from "@/components/contact";
 import WhatsAppButton from "@/components/whatsappbutton";
 import { Gallery } from "@/components/gallery";
 import GCalendar from "@/components/calendar";
+import { Navbar } from "@/components/navbar";
 
 export default function Home() {
   return (
     <div>
       <main className="min-h-screen bg-gray-100 ">
+        <div><Navbar />
         <div pt-10>
           <section className="h-screen flex items-center justify-center bg-gradient-to-b from-green-50 to-white px-4 md:px-8">
             <div className="max-w-2xl text-center">
@@ -69,7 +71,9 @@ export default function Home() {
             <Contact />
           </section>
         </div>
+        </div>
       </main>
     </div>
+    
   );
 }
