@@ -1,8 +1,8 @@
 import Image from "next/image";
 
 const images = [
+ "/livingroom.jpg?height=400&width=600",
   "/dapur.jpg?height=400&width=600",
-  "/livingroom.jpg?height=400&width=600",
   "/front2.jpg?height=400&width=600",
   "/bedroom.jpg?height=400&width=600",
 ];
